@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#350B16">
+  <title>Mis 15 · Camila</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<audio id="musica" src="musica/cancion.mp3" loop preload="none"></audio>
+
+<button id="boton-musica"
+        class="boton-musica"
+        type="button"
+        aria-label="Activar música"
+        aria-pressed="false">
+  ♪
+</button>
+
+<body>
+  <main>
+    <!-- PORTADA EN VIDEO -->
+    <header class="portada">
+      <video class="portada__video" autoplay muted loop playsinline>
+        <source src="videos/portada.mp4" type="video/mp4">
+        Tu navegador no puede reproducir este video.
+      </video>
+
+     
+      </a>
+    </header>
+
+    <!-- RELOJ -->
+    <section class="seccion reloj" id="cuenta-regresiva">
+      <p class="reloj__titulo">FALTAN</p>
+
+      <div class="reloj__numeros" aria-label="Cuenta regresiva para la fiesta">
+        <div><span id="dias">00</span><small>DÍAS</small></div>
+        <div><span id="horas">00</span><small>HORAS</small></div>
+        <div><span id="minutos">00</span><small>MIN</small></div>
+        <div><span id="segundos">00</span><small>SEG</small></div>
+      </div>
+
+      <p class="reloj__fecha">SAB 17 OCT</p>
+    </section>
+
+    <!-- FIESTA -->
+    <section class="seccion" id="fiesta">
+      <img class="seccion__icono" src="imagenes/icono-fiesta.png" alt="">
+      <h2>Fiesta</h2>
+      <p>17 de Octubre de 2026</p>
+      <p>22 hs - Soc. Sirio Libanesa</p>
+      <a class="boton"
+   href="https://maps.app.goo.gl/pNJSASBbctHVibXp9"
+   target="_blank"
+   rel="noopener noreferrer">
+  Cómo llegar
+</a>
+
+    <!-- ASISTENCIA -->
+    <section class="seccion" id="asistencia">
+      <img class="seccion__icono" src="imagenes/icono-asistencia.png" alt="">
+      <h2>Asistencia</h2>
+      <p>¡Me encantaría que estés conmigo en este día tan especial!</p>
+      <a class="boton"
+   href="https://wa.me/5493888524905?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20los%2015%20de%20Camila."
+   target="_blank"
+   rel="noopener noreferrer">
+  Confirmar asistencia
+</a>
+
+    
+    </section>
+
+    <!-- DRESS CODE -->
+    <section class="seccion" id="dress-code">
+      <img class="seccion__icono" src="imagenes/icono-dress-code.png" alt="">
+      <h2>Dress code</h2>
+      <p>Elegante.<br> Se reserva el color rojo para la cumpleañera</p>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Camila ♡</p>
+  </footer>
+</body>
+</html>
